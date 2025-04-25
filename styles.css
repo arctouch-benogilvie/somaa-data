@@ -1,0 +1,118 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Figtree", "Figtree Fallback";
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 48px 24px;
+}
+
+p {
+  font-family: "Noto Sans", "Noto Sans Fallback";
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: normal;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0 0 8px 0;
+}
+
+a {
+  display: inline;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+ul {
+  font-size: 16px;
+  line-height: 24.8px;
+  margin: 0 0 24px 0;
+  padding-inline-start: 40px;
+}
+
+li {
+  display: list-item;
+}
+
+footer {
+  line-height: 22px;
+  padding: 0;
+  margin: 0;
+}
+
+.related-links h3 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+
+.related-links,
+.copyright {
+  padding: 48px 24px;
+}
+
+.copyright h3,
+.copyright p,
+.copyright a {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+caption {
+  font-family: "Noto Sans", "Noto Sans Fallback";
+  font-size: 18px;
+  font-style: italic;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #fff;
+    color: rgb(9, 9, 9);
+  }
+
+  a {
+    color: rgb(19, 120, 164);
+  }
+
+  .related-links {
+    background-color: rgb(246, 246, 246);
+    color: rgb(9, 9, 9);
+  }
+
+  .copyright {
+    background-color: rgb(55, 55, 55);
+    color: rgb(230, 230, 230);
+  }
+
+  /* Definindo estilos para o tema escuro */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #242424;
+      color: #c9c9c9;
+    }
+
+    a {
+      color: #c9c9c9;
+    }
+  }
+}
