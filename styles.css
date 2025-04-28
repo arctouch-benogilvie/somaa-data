@@ -1,20 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .root {
   display: flex;
   flex-direction: column;
 }
 
 body {
-  font-family: "Figtree", "Figtree Fallback";
-  margin: 0;
-  padding: 0;
-}
-
-main {
-  padding: 48px 24px;
+  font-family: "Figtree", "Figtree Fallback", sans-serif;
+  line-height: 1.5;
 }
 
 p {
-  font-family: "Noto Sans", "Noto Sans Fallback";
+  font-family: "Noto Sans", "Noto Sans Fallback", sans-serif;
+}
+
+caption {
+  font-family: "Noto Sans", "Noto Sans Fallback", sans-serif;
+  font-size: 18px;
+  font-style: italic;
 }
 
 h1 {
@@ -27,7 +34,6 @@ h1 {
 h2 {
   font-weight: 500;
   font-size: 22px;
-  letter-spacing: normal;
 }
 
 h3 {
@@ -38,26 +44,38 @@ h3 {
 }
 
 a {
-  display: inline;
   font-size: 18px;
   font-weight: 700;
+  text-decoration: underline;
 }
 
 ul {
   font-size: 16px;
-  line-height: 24.8px;
-  margin: 0 0 24px 0;
+  line-height: 1.55;
   padding-inline-start: 40px;
+  margin: 0 0 24px 0;
 }
 
 li {
-  display: list-item;
+  list-style: disc;
+}
+
+main {
+  padding: 48px 24px;
 }
 
 footer {
-  line-height: 22px;
-  padding: 0;
   margin: 0;
+}
+
+.related-links,
+.copyright {
+  padding: 48px 24px;
+}
+
+.related-links {
+  background-color: #373737;
+  color: #ffffff;
 }
 
 .related-links h3 {
@@ -66,9 +84,8 @@ footer {
   margin-bottom: 48px;
 }
 
-.related-links,
 .copyright {
-  padding: 48px 24px;
+  color: rgb(230, 230, 230);
 }
 
 .copyright h3,
@@ -76,12 +93,6 @@ footer {
 .copyright a {
   font-size: 14px;
   font-weight: 400;
-}
-
-caption {
-  font-family: "Noto Sans", "Noto Sans Fallback";
-  font-size: 18px;
-  font-style: italic;
 }
 
 @media (prefers-color-scheme: light) {
@@ -103,16 +114,28 @@ caption {
     background-color: rgb(55, 55, 55);
     color: rgb(230, 230, 230);
   }
+  .copyright a {
+    color: rgb(230, 230, 230);
+  }
+}
 
-  /* Definindo estilos para o tema escuro */
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #242424;
-      color: #c9c9c9;
-    }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #433f3f;
+    color: #ffffff;
+  }
 
-    a {
-      color: #c9c9c9;
-    }
+  a {
+    color: #ffffff;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid rgb(230, 230, 230);
+  }
+
+  .copyright {
+    color: #e6e6e6;
   }
 }
