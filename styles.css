@@ -122,7 +122,7 @@ footer {
   table,
   th,
   td {
-    border: #000000;
+    border: 1px solid #000000;
   }
 
   .related-links {
@@ -152,7 +152,7 @@ footer {
   table,
   th,
   td {
-    border: #e6e6e6;
+    border: 1px solid #e6e6e6;
   }
 
   .copyright {
