@@ -18,6 +18,20 @@ p {
   font-family: "Noto Sans", "Noto Sans Fallback", sans-serif;
 }
 
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 5px;
+}
+td {
+  text-align: center;
+}
+.table-wrapper {
+  padding-bottom: 10px;
+}
+
 caption {
   font-family: "Noto Sans", "Noto Sans Fallback", sans-serif;
   font-size: 18px;
@@ -105,6 +119,12 @@ footer {
     color: rgb(19, 120, 164);
   }
 
+  table,
+  th,
+  td {
+    border: #000000;
+  }
+
   .related-links {
     background-color: rgb(246, 246, 246);
     color: rgb(9, 9, 9);
@@ -132,7 +152,7 @@ footer {
   table,
   th,
   td {
-    border: 1px solid #e6e6e6;
+    border: #e6e6e6;
   }
 
   .copyright {
